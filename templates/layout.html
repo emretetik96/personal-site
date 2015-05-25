@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="end"> 
+	<head>
+		<title>
+			{% block title %}
+			{% endblock %}
+		</title>
+		<style type="text/css">
+			li {display: inline;}
+		</style>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<ul>
+				<li>
+					<button id="home">
+						<a href='/'>home</a>
+					</button>
+				</li>
+				<li>
+					<button id="about">
+						<a href='/about'>about</a>
+					</button>
+				</li>
+				<li>
+					<button id="projects">
+						<a href='/projects'>projects</a>
+					</button>
+				</li>
+				<li>
+					<button id="writing_journalism">
+						<a href='/writing_journalism'>writing/journalism</a>
+					</button>
+				</li>
+				<li>
+					<button id="contact">
+						<a href='/contact'>contact</a>
+					</button>
+				</li>
+		</ul>
+		{% block content %}
+		{% endblock %}
+	</body>
+</html>
